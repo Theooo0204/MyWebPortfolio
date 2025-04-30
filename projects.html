@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav-header">
+            <div class="logo">
+              <i class="fa-solid fa-folder-open fa-2xl" id="logo"></i>
+              <p>My Web Portfolio</p>
+            </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav_links" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="quizzes.html">Quizzes</a></li>
+              <li><a href="projects.html" class="active">Projects</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <div class="maintext">
+        <h1>Past Projects</h1>
+    </div>
+
+    <div class="project-container">
+        <div class="portfolio-gallery">
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="projects/proj1.jpg" alt="Tiles and Concrete Blocks Estimation">
+                </div>
+                <div class="port-content">
+                    <h3>Tiles and Concrete Blocks Estimation</h3>
+                    <p>It is a project that has a function to determine how many tiles and concrete hollow blocks are needed by computing the wall and floor area. </p> 
+                    <p>It also estimates the cost of the materials so you will not going to worry to compute all of the materials.</p>
+                    <a href="https://drive.google.com/drive/folders/1n2EOpOEmdoporZkfSbj3bV9vHP0OaThR?usp=sharing"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+    
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="projects/proj2.jpg" alt="eb Portfolio based on hobby">
+                </div>
+                <div class="port-content">
+                    <h3>Web Portfolio based on hobby</h3>
+                    <p>This HMTL Project is my First Portfolio wherein it contains Gallery, About, Contact section</p>
+                    <p>As we can see this project shows that I'm not that good at using color pallete.</p>
+                    <a href="https://drive.google.com/drive/folders/1n2EOpOEmdoporZkfSbj3bV9vHP0OaThR?usp=sharing"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+    
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="projects/proj3.jpg" alt="Barangay Certificate System">
+                </div>
+                <div class="port-content">
+                    <h3>Barangay Certificate System</h3>
+                    <p>This system was a solution to our barangay problem wherein our barangay consume lot time while releasing a certificate.</p>
+                    <p>I've encountered it when I was getting a Barangay Certificate thats needs to inquire first at morning then go back at afternoon or tomorrow 
+                        for the release of the Certificate which takes time</p>
+                    <a href="https://drive.google.com/drive/folders/1n2EOpOEmdoporZkfSbj3bV9vHP0OaThR?usp=sharing"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+    
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="projects/proj4.jpg" alt="Giga CvSU Gym">
+                </div>
+                <div class="port-content">
+                    <h3>Giga CvSU Gym</h3>
+                    <p>An E-commerce website that needs to be create through Wordpress. It is a website based on our business a Gym Center that tells about our services</p>
+                    <p>It offers scheduling, availing of gym products, Traine Services and even Online payments were included in this website.</p>
+                    <a href="https://drive.google.com/drive/folders/1n2EOpOEmdoporZkfSbj3bV9vHP0OaThR?usp=sharing"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+    
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="projects/proj5.jpg" alt="Bubble Sort">
+                </div>
+                <div class="port-content">
+                    <h3>Bubble Sort</h3>
+                    <p>We are task here to make a visualization how Bubble Sort works and integrate it by using Html, Css, and Javascript.</p>
+                    <a href="https://drive.google.com/drive/folders/1n2EOpOEmdoporZkfSbj3bV9vHP0OaThR?usp=sharing"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+    
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="projects/proj6.jpg" alt="Fuel Consumption System">
+                </div>
+                <div class="port-content">
+                    <h3>Fuel Consumption System</h3>
+                    <p>A solution that solves a problem in a Hotel. There is a problem that has no record 
+                        of the driver who use a certain vehicle or service at accompany clients from hotel</p>
+                    <p>It was made to make transparency on the driver side</p>
+                    <a href="https://drive.google.com/drive/folders/1n2EOpOEmdoporZkfSbj3bV9vHP0OaThR?usp=sharing"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+    
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav-header">
+            <div class="logo">
+              <i class="fa-solid fa-folder-open fa-2xl" id="logo"></i>
+              <p>My Web Portfolio</p>
+            </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav_links" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="quizzes.html" class="active">Quizzes</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <div class="maintext">
+        <h1>Quizzes</h1>
+    </div>
+
+    <div class="containerquiz">
+        <div class="gallery">
+            <div class="box" id="quiz">
+                <div class="image"  id="quiz">
+                    <img src="quizzes/Pretest2.jpg" alt="Pretest2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="quizzes/Pretest3.jpg" alt="Pretest3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="quizzes/Pretest4.jpg" alt="Pretest4">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="quizzes/Pretest5.jpg" alt="Pretest5">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="quizzes/Post1.jpg" alt="Post1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="quizzes/Post2.jpg" alt="Post2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="quizzes/Post3.jpg" alt="Post3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="quizzes/Lab.jpg" alt="Lab">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="quizzes/Sketch.jpg" alt="Sketch">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+        
+
+    </div>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+    
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.getElementsByClassName("close")[0];
+    
+        // Get all images inside .image
+        const images = document.querySelectorAll(".image img");
+    
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                // Disable modal on screens 768px or smaller
+                if (window.innerWidth <= 768) return;
+    
+                modal.style.display = "block";
+                modalImg.src = img.src;
+            });
+        });
+    
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+    </body>
+</html>

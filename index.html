@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>My Web Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="nav-header">
+            <div class="logo">
+              <i class="fa-solid fa-folder-open fa-2xl" id="logo"></i>
+              <p>My Web Portfolio</p>
+            </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav_links" id="navLinks">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="quizzes.html">Quizzes</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </nav>
+          </div>
+    </header>
+
+    <div class="container">
+        <div class="first">
+            <h2>Good Day!</h2>
+            <h1>It's Theo</h1>
+            <h3>A student from Cavite State University <br> Silang Campus</h3>
+            <h3><span class="text"></span></h3>
+            
+            <div class="socials">
+                <a href="https://www.facebook.com/PaulMatthewMartinezPMM"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href=""><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                <a href="https://github.com/Theooo0204"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </div>
+        </div>
+        <div class="second">
+            <div class="profile-container">
+                <div class="bg-shape"></div>
+                <img src="images/animated.png" alt="Profile Picture" class="profile-pic">
+            </div>
+        </div>
+    </div>
+
+  
+
+    <main class="main">
+        <div class="maintext">
+            <h1>Best Project</h1>
+        </div>
+        <div class="port-box">
+            <div class="port-image">
+                <img src="projects/proj4.jpg" alt="Giga CvSU Gym">
+            </div>
+        </div>          
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>Contact Me:</p>
+            <ul class="contact-links">
+                <li>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">
+                        <i class="fa-solid fa-envelope"></i> sc.paulmatthew.martinez@cvsu.edu.ph
+                    </a>
+                </li>
+                <li>
+                <li>
+                    <a href="https://github.com/Theooo0204" target="_blank">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">© 2025 Theooo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+      
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>

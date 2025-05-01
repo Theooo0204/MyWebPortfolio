@@ -81,8 +81,6 @@ header #logo{
 .nav_links li{
     display: inline-block;
     padding: 0 10px;
-    
-  
 }
 
 .nav_links li a {
@@ -235,38 +233,45 @@ body{
                    /*****MAIN*****/        
 
 main{
-    position: relative;
-    left: 20%;
-    margin-top: 6%;
-    width: 60%;
-    height: 50%;
+      width: 60%;
+    margin: 6% auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;  
 }    
+
 
                     /*****FOOTER*****/  
                     
 footer {
     background-color: #181C14;
     color: white;
-    padding: 30px 20px;
+    padding: 20px 20px;
     text-align: center;
     margin-top: 40px;
 }
 
 footer p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
 }
 
 .footer-container {
     max-width: 900px;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container ul li{
+    display: inline-block;
+    padding: 0 10px;
 }
 
 .contact-links {
     list-style: none;
     padding: 0;
-    margin: 10px 0 20px 0;
 }
 
 .contact-links li {
@@ -285,13 +290,31 @@ footer p{
 }
 
 .contact-links i {
-    margin-right: 8px;
+    margin-right: 3px;
 }
 
 footer .copyright {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
+/* Ensure main content grows to push footer down */
+body > header,
+body > .container-about {
+    flex-shrink: 0;
+}
+
+body > .container-about {
+    flex: 1; /* this makes the content area take up available space */
+}
+
+footer {
+    background: #181C14;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
 
 /* Responsive adjustments */
 
@@ -822,6 +845,15 @@ footer .copyright {
     .resume-list .resume-item {
         padding: 1rem;
     }
+}
+
+/* Make body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
                                 /*****QUIZZES*****/  
